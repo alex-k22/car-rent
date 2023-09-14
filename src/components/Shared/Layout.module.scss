@@ -1,6 +1,7 @@
+@import '../../styles/common/vars';
 .wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 20px;
     padding-top: 20px;
@@ -12,6 +13,7 @@
       padding-bottom: 22.5px;
     }
   }
-  // .mainNav {
-  //   margin-left: 40px;
-  // }
+.pageHeader {
+  background-color: rgba(212, 212, 212, 0.5);
+  border-bottom: 1px solid red;
+}

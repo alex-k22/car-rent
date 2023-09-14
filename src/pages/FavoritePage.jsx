@@ -1,6 +1,9 @@
+import Container from "components/Shared/Container";
+
 const FavoritePage = () => {
     return (
-        <div>This is Favorite Page &#9733;</div>
+        <Container><div>🌟This is Favorite Page🌟;</div></Container>
+        
     )
 }
 

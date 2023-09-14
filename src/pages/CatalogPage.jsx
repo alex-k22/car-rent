@@ -1,6 +1,9 @@
+import Container from "components/Shared/Container";
+
 const CatalogPage = () => {
     return (
-        <div>This is Catalog page</div>
+        <Container><div>🚗This is Catalog page🚗</div></Container>
+        
     )
 }
 

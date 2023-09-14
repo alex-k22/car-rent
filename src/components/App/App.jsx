@@ -1,8 +1,8 @@
 import { Navigate, Route, Routes } from "react-router-dom";
-import Layout from "src/components/Layout/Layout";
-import HomePage from "src/pages/HomePage";
-import CatalogPage from "src/pages/CatalogPage";
-import FavoritePage from "src/pages/FavoritePage";
+import Layout from "components/Shared/Layout";
+import HomePage from "pages/HomePage";
+import CatalogPage from "pages/CatalogPage";
+import FavoritePage from "pages/FavoritePage";
 
 function App() {
 

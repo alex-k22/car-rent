@@ -1,7 +1,11 @@
+import Container from "components/Shared/Container";
+
 const HomePage = () => {
-    return (
-        <div>This is app home page</div>
-    )
-}
+  return (
+    <Container>
+      <div>🌍This is app home page🌍</div>
+    </Container>
+  );
+};
 
 export default HomePage;

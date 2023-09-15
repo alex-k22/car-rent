@@ -11,5 +11,8 @@ export default defineConfig({
       components: "/src/components",
       pages: "/src/pages",
     }
+  },
+  server: {
+    historyApiFallback: true,
   }
 })

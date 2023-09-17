@@ -4,13 +4,12 @@
 
 body {
   margin: 0;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.28;
 
   color: $secondary-bg-blue-color;
-  background-color: $main-bg-color;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-y: scroll;
@@ -34,7 +33,7 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -77,7 +76,19 @@ html {
 }
 
 button {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
   cursor: pointer;
+  border-radius: 12px;
+  font-family: inherit;
+  border-color: transparent;
+  color: $primary-white-color;
+  background: #3470ff;
+  &:hover {
+    background-color: $hover-blue-color;
+  }
 }
 a {
   font-weight: 500;

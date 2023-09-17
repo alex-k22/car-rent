@@ -2,7 +2,7 @@ import css from "./Navigation.module.scss";
 import { NavLink } from "react-router-dom";
 
 const Navigation = () => {
-  return (
+   return (
     <nav className={css.nav}>
       <ul className={css.list}>
         <li>

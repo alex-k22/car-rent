@@ -1,0 +1,62 @@
+@import '../../styles/common/vars';
+.card {
+    position: relative;
+    width: 274px;
+}
+.heartBtn {
+    position: absolute;
+    right: 14px;
+    top: 14px;
+    width: 18px;
+    height: 18px;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    text-decoration: none;
+}
+.img {
+    width: 100%;
+    height: 278px;
+    margin-bottom: 14px;
+    border-radius: 14px;
+    object-fit: cover;
+}
+.make {
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px;
+}
+.blue {
+    color: $main-blue-color;
+}
+.carMainInfo {
+    display: flex;
+    justify-content: space-between;
+}
+.carInfo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 6px;
+    margin-top: 8px;
+    margin-bottom: 72px;
+    color: rgba(18, 20, 23, 0.50);
+font-family: Manrope;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+}
+.infoItem {
+    padding-right: 6px;
+    border-right: 1px solid rgba(18, 20, 23, 0.1);
+}
+.moreBtn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 44px;
+    margin-bottom: 0;
+    
+}

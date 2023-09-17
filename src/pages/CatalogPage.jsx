@@ -20,7 +20,7 @@ const CatalogPage = () => {
         // setStatus("resolved");
         
         setCars(i => [...i, ...cars]);
-        console.log(cars)
+        // console.log(cars)
 
         // if (data.hits.length === 0) {
         //   toast.error('Sorry, but nothing found');

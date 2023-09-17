@@ -23,7 +23,6 @@
 }
 .link {
   display: block;
-  // height: 32px;
   font-size: 14px;
   line-height: 20px;
   font-weight: 500;
@@ -31,16 +30,18 @@
   border-radius: 10px;
   border: 1px solid rgba($color: $primary-white-color, $alpha: 0.2);
   padding: 6px 16px;
-  background-color: rgb(253, 234, 228);
+  color: $primary-white-color;
+  background-color: transparent;
   transition: background-color $transition;
 
   &[aria-current] {
-    background-color: rgb(192, 167, 162);
+    background-color: $hover-blue-color;
   }
 
   &:hover,
   &:focus {
-    background-color: rgb(192, 167, 162);
+    background-color: $hover-blue-color;
+    color: $primary-white-color
   }
 
 }

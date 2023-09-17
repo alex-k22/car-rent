@@ -1,12 +1,19 @@
 import Container from "components/Shared/Container";
-import Loader from "../components/Loader/Loader";
+import { NavLink } from "react-router-dom";
+import css from "./HomePage.module.scss";
 
 const HomePage = () => {
   return (
+    <section className={css.section}>
     <Container>
-      <div>🌍This is app home page🌍</div>
-      <Loader/>
+
+      <div>
+        <h1 className={css.header}>Drive your dreams</h1>
+        <p className={css.description}>Unlock the road to freedom with us. Discover convenience, flexibility, and adventure at your fingertips. Rent a car today and drive your dreams!</p>
+        <NavLink to="/catalog" className={css.link}>Start</NavLink>
+      </div>
     </Container>
+    </section>
   );
 };
 

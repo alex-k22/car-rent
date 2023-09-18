@@ -74,7 +74,7 @@ const CarInfo = ({ cars, toggleModal }) => {
             <li className={css.conditionsItem}>Minimum age: <span className={css.blue}>{rentalConditions.split("\n")[0].split(":")[1]}</span></li>
             <li className={css.conditionsItem}>{rentalConditions.split("\n")[1]}</li>
             <li className={css.conditionsItem}>{rentalConditions.split("\n")[2]}</li>
-            <li className={css.conditionsItem}>Mileage: <span className={css.blue}>{mileage / 1000}</span></li>
+            <li className={css.conditionsItem}>Mileage: <span className={css.blue}>{mileage.toLocaleString("en-EN")}</span></li>
             <li className={css.conditionsItem}>Price: <span className={css.blue}>{rentalPrice}</span></li>
         </ul>
         <a href="tel:+380730000000" className={css.rental}>Rental Car</a>

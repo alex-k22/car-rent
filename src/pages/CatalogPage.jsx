@@ -44,9 +44,7 @@ const CatalogPage = () => {
   }, []);
 
   useEffect(() => {
-    console.log(allCars)
     setFilteredCars(allCars.slice(0, page * 8));
-    console.log(allCars.slice(0, page * 8))
   }, [allCars, page])
 
   return (

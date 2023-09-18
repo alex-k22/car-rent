@@ -17,6 +17,7 @@ const Card = ({ cars }) => {
     type,
     functionalities,
   } = cars;
+  
   const city = address.split(",")[1];
   const country = address.split(",")[2];
 
@@ -49,7 +50,6 @@ const Card = ({ cars }) => {
     let newStorage;
     if (!isFavorite) {
       newStorage = [...storage, cars];
-      console.log(newStorage);
     }
     if (isFavorite) {
       newStorage = storage.filter((car) => car.id !== id);

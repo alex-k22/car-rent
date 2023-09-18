@@ -1,0 +1,105 @@
+@import "../../styles/common/vars";
+.wrapper {
+  position: relative;
+  width: 541px;
+  padding: 40px;
+  border-radius: 24px;
+}
+.imgWrapper {
+  position: relative;
+}
+.closeBtn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  padding: 0;
+  border: 1px solid transparent;
+  background-color: transparent;
+  text-decoration: none;
+  fill: main-bg-color;
+  padding: 0;
+  border-radius: 0;
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+  }
+
+  &:active {
+    border-color: rgba($color: $main-blue-color, $alpha: 0.5);
+  }
+}
+.closeIcon {
+  fill: currentColor;
+}
+.img {
+  width: 100%;
+  height: 248px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 14px;
+}
+.make {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+.blue {
+  color: $main-blue-color;
+}
+.carInfo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 6px;
+  margin-top: 8px;
+  color: rgba(18, 20, 23, 0.5);
+  font-family: Manrope;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+}
+.infoItem {
+  padding-right: 6px;
+  border-right: 1px solid rgba(18, 20, 23, 0.1);
+}
+.description {
+  margin-top: 14px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.accHeader {
+  margin-top: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.conditionsItem {
+  font-size: 12px;
+
+  line-height: 18px;
+  padding: 7px 14px;
+}
+.blue {
+  color: $main-blue-color;
+  font-weight: 600;
+}
+.condList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+.rental {
+  padding: 12px 50px;
+  font-size: 14px;
+  font-weight: 600;
+  color: $primary-white-color;
+  background-color: $main-blue-color;
+  border-radius: 12px;
+  &:hover, &:focus {
+    color: $primary-white-color;
+    background-color: $hover-blue-color;
+  }
+}

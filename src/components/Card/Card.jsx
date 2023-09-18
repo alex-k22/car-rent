@@ -4,7 +4,7 @@ import { ReactComponent as FavoriteImg } from "../../assets/active.svg";
 import { ReactComponent as NotFavoriteImg } from "../../assets/normal.svg";
 import CarInfo from "../CarInfo/CarInfo";
 
-const Card = ({ cars }) => {
+const Card = ({ cars, setStorage=null }) => {
   const {
     id,
     img,
@@ -56,6 +56,7 @@ const Card = ({ cars }) => {
     }
     localStorage.setItem("favorite", JSON.stringify(newStorage));
     setIsFavorite((prev) => !prev);
+    {setStorage && setStorage(newStorage)}
   };
 
   return (

@@ -5,6 +5,7 @@ import CardSet from "../components/CardSet/CardSet";
 import { useEffect, useState } from "react";
 import LoadMoreBtn from "../components/LoadMoreBtn/LoadMoreBtn";
 import Loader from "../components/Loader/Loader";
+import Sidebar from "../components/Sidebar/Sidebar";
 
 const CatalogPage = () => {
   const [status, setStatus] = useState("idle");
@@ -18,6 +19,11 @@ const CatalogPage = () => {
     }
     setPage(page + 1);
   };
+
+  const handleFilter = () =>{
+    const filterApply = allCars.filter(car => car.make === "Volvo").filter(car => car.year === 2020);
+setFilteredCars(filterApply);
+  }
 
   useEffect(() => {
     const fetchData = async () => {
@@ -49,6 +55,7 @@ const CatalogPage = () => {
 
   return (
     <Container>
+      <Sidebar handleFilter={handleFilter}/>
       {filteredCars && <CardSet cars={filteredCars} />}
       {status === "resolved" && <LoadMoreBtn onClick={handleLoadMore} />}
       {status === "pending" && <Loader />}
